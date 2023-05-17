@@ -1,5 +1,6 @@
 <?php 
 
+include __DIR__.'/Category.php';
 
 class Product
 {
@@ -11,14 +12,17 @@ class Product
 
     $img, 
 
-    $vote;
+    $vote,
+    
+    $category;
 
-    public function __construct(string $name, int $price, string $img, int $vote)
+    public function __construct(string $name, int $price, string $img, int $vote, Category $category)
     {
         $this->name = $name;
         $this->price = $price;
         $this->img = $img;
         $this->vote = $vote;
+        $this->category = $category;
     }
 
 

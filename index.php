@@ -15,11 +15,12 @@ include './Views/header.php';
             <img class="card-img-top" src="<?php echo $item->img ?>" alt="">
             <div class="card-body">
                 <h5 class="card-title text-center pb-4 fw-bold"><?php echo "$item->name" ?></h5>
-                <p class="card-text fw-bold">Prezzo: <?php echo "$item->price" ?></p>
+                <p class="card-text fw-bold">Prezzo: <?php echo "$item->price" ?> €</p>
                 <p class="card-text fw-bold">Voto: <?php echo "$item->vote" ?> </p>
                 <p class="card-text fw-bold">Tipo di alimento: <?php echo "$item->type" ?> </p>
-                <p class="card-text fw-bold">Calorie Tot.: <?php echo "$item->calories" ?> </p>
-                <p class="card-text fw-bold">Peso prodotto: <?php echo "$item->weight" ?> </p>  
+                <p class="card-text fw-bold">Calorie Tot.: <?php echo "$item->calories" ?> kcal </p>
+                <p class="card-text fw-bold">Peso prodotto: <?php echo "$item->weight" ?> kg</p>  
+                <p class="card-text fw-bold"><?php echo $item->category->icon ?> </p>  
             </div>
         </div>
     <?php } ?>
@@ -32,10 +33,11 @@ include './Views/header.php';
             <img class="card-img-top" src="<?php echo $item->img ?>" alt="">
             <div class="card-body">
                 <h5 class="card-title text-center pb-4 fw-bold"><?php echo "$item->name" ?></h5>
-                <p class="card-text fw-bold">Prezzo: <?php echo "$item->price" ?></p>
+                <p class="card-text fw-bold">Prezzo: <?php echo "$item->price" ?>€</p>
                 <p class="card-text fw-bold">Voto: <?php echo "$item->vote" ?> </p>
-                <p class="card-text fw-bold">Dimensioni: <?php echo "$item->dims" ?> </p>
+                <p class="card-text fw-bold">Dimensioni: <?php echo "$item->dims" ?> cm </p>
                 <p class="card-text fw-bold">Suono: <?php echo "$item->sound" ?> </p>  
+                <p class="card-text fw-bold"><?php echo $item->category->icon ?> </p>  
             </div>
         </div>
     <?php } ?>
@@ -48,11 +50,12 @@ include './Views/header.php';
             <img class="card-img-top" src="<?php echo $item->img ?>" alt="">
             <div class="card-body">
                 <h5 class="card-title text-center pb-4 fw-bold"><?php echo "$item->name" ?></h5>
-                <p class="card-text fw-bold">Prezz: <?php echo "$item->price" ?></p>
+                <p class="card-text fw-bold">Prezzo: <?php echo "$item->price" ?>€</p>
                 <p class="card-text fw-bold">Vote: <?php echo "$item->vote" ?> </p>
-                <p class="card-text fw-bold">Lunghezza: <?php echo "$item->lenght" ?> </p>
-                <p class="card-text fw-bold">larghezza: <?php echo "$item->width" ?> </p>  
+                <p class="card-text fw-bold">Lunghezza: <?php echo "$item->lenght" ?> cm</p>
+                <p class="card-text fw-bold">larghezza: <?php echo "$item->width" ?> cm </p>  
                 <p class="card-text fw-bold">Materiale: <?php echo "$item->material" ?> </p>  
+                <p class="card-text fw-bold"><?php echo $item->category->icon ?>  </p>  
             </div>
         </div>
     <?php } ?>
