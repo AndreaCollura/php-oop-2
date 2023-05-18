@@ -50,12 +50,29 @@ $products = [
 
 ];
 
+foreach($products['foods'] as $product){
+    
+    try {
+        $product->setProtein(60 , 'gr');
+    } catch (Exception $e) {
+        echo 'Eccezione: ' . $e->getMessage();
+    }
+    
+};
+
+
+
+
+
+
+
+
 
 
     
 
 
-/*  var_dump($products['foods']);  */
+ /* var_dump($products['foods']);  */
 
 ?>
 

@@ -1,9 +1,12 @@
 <?php
 
 include_once __DIR__.'/Product.php';
+include_once __DIR__.'/../Traits/Proteintable.php';
 
 class Food extends Product
 {
+    use Proteintable;
+
     public $type, $calories , $weight;
 
     public function __construct(string $name, int $price, string $img, int $vote, Category $category, string $type, int $calories , int $weight,){

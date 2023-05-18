@@ -20,6 +20,7 @@ include './Views/header.php';
                 <p class="card-text fw-bold">Tipo di alimento: <?php echo "$item->type" ?> </p>
                 <p class="card-text fw-bold">Calorie Tot.: <?php echo "$item->calories" ?> kcal </p>
                 <p class="card-text fw-bold">Peso prodotto: <?php echo "$item->weight" ?> kg</p>  
+                <p class="card-text fw-bold">Proteine: <?php echo $item->getProtein() ?> </p> 
                 <p class="card-text fw-bold"><?php echo $item->category->icon ?> </p>  
             </div>
         </div>
